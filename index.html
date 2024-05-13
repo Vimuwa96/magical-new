@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magical Toys Paradise</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <!-- Upper Header -->
+    <div class="upper-header-wrapper p-2">
+      <div class="container d-flex my-auto justify-content-between">
+        <div class="discount-msg">
+          <p class="d-flex my-auto">Get 20% off all Web Store Orders</p>
+        </div>
+
+        <div class="store-location">
+          <p class="d-flex my-auto">
+            <i class="bi bi-geo-alt" style="padding-right: 8px"></i> Shop
+            Location
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Upper Header End -->
+
+    <!-- Logo Section -->
+    <div
+      class="container px-5"
+      style="box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 35px"
+    >
+      <div class="logo-section-wrapper d-flex justify-content-between">
+        <div class="site-logo">
+          <img src="images/MTP - logo.png" alt="site-logo" width="110px" />
+        </div>
+
+        <div
+          class="search-bar-section-wrapper d-flex my-auto d-none d-sm-block"
+        >
+          <div class="input-group">
+            <input
+              type="text"
+              class="search-bar"
+              placeholder="Search Products"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button class="search-btn" type="button" id="button-addon2">
+              Button
+            </button>
+          </div>
+        </div>
+        <div class="cart-section-wrapper d-flex">
+          <div class="shopping-cart-icon d-flex my-auto px-2">
+            <a href="" class="d-flex my-auto"
+              ><i class="bi bi-heart fs-4"></i
+            ></a>
+          </div>
+          <div class="shopping-cart-icon d-flex my-auto px-2">
+            <a href="" class="d-flex my-auto"
+              ><i class="bi bi-cart fs-4"></i><span><sup>1</sup></span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Logo Section End -->
+
+    <!-- Main Menu -->
+    <div class="container pt-2">
+      <div class="main-menu-wrapper">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span><i class="bi bi-list" style="color: aliceblue"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item ps-xl-3">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item ps-xl-3">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item ps-xl-3 dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Categories
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item ps-xl-3">
+                  <a href="" class="nav-link">Contact us</a>
+                </li>
+                <li class="nav-item ps-xl-3">
+                  <a href="" class="nav-link">Track My Order</a>
+                </li>
+                <li class="nav-item ps-xl-3">
+                  <a href="" class="nav-link">How to Place a Order</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Main Menu End -->
+
+    <!-- Welcome -->
+    <div class="container p-3">
+      <div class="welcome px-3">
+        <h5>Welcome to Magical Toys Paradise online Store</h5>
+        <p>
+          Magical Toys Paradise brings you a world of enchanting toys and games,
+          inspiring creativity and joy in every child's heart. Explore our
+          collection today!
+        </p>
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div
+              class="categories-section p-3"
+              style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px"
+            >
+              <div class="category-main-card pt-3 text-center">
+                <div class="category-main-icon">
+                  <i class="bi bi-tags-fill fs-3"></i>
+                </div>
+                <div class="category-main-card-header pt-3">
+                  <p>Our Categories</p>
+                </div>
+                <div class="category-main-desc">
+                  <p>Discour the all Products by it's categories</p>
+                </div>
+                <!-- <div class="category-main-btn">
+                                <a href="" class="btn btn-outline-dark">Browser</a>
+                            </div> -->
+              </div>
+            </div>
+
+            <div
+              class="category-main-image-section d-none d-sm-block"
+              style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px"
+            >
+              <div class="category-main-image-wrapper">
+                <img src="images/main-category.png" alt="" width="100%" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-md-3 col-6 g-2">
+                <div class="category-wrapper text-center">
+                  <div class="category-card p-3">
+                    <div class="category-card-image mb-2">
+                      <img
+                        src="images/360_F_53674385_80q65X69NVEi2mz9ziGnzwejhknWNoPL.jpg"
+                        alt="categories"
+                        width="100%"
+                      />
+                    </div>
+                    <div
+                      class="category-header d-flex my-auto justify-content-center"
+                    >
+                      <h6 class="d-flex my-auto">Play Toys</h6>
+                    </div>
+                    <div class="category-btn pt-3">
+                      <a href="" class="btn btn-outline-danger">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 g-2">
+                <div class="category-wrapper text-center">
+                  <div class="category-card p-3">
+                    <div class="category-card-image mb-2">
+                      <img
+                        src="images/81e+bYxBQRL._AC_UF894,1000_QL80_.jpg"
+                        alt="categories"
+                        width="100%"
+                      />
+                    </div>
+                    <div
+                      class="category-header d-flex my-auto justify-content-center"
+                    >
+                      <h6 class="d-flex my-auto">Soft Toys</h6>
+                    </div>
+                    <div class="category-btn pt-3">
+                      <a href="" class="btn btn-outline-danger">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 g-2">
+                <div class="category-wrapper text-center">
+                  <div class="category-card p-3">
+                    <div class="category-card-image mb-2">
+                      <img
+                        src="images/puzzle-child-playing.jpg"
+                        alt="categories"
+                        width="100%"
+                      />
+                    </div>
+                    <div
+                      class="category-header d-flex my-auto justify-content-center"
+                    >
+                      <h6 class="d-flex my-auto">Puzzel Toys</h6>
+                    </div>
+                    <div class="category-btn pt-3">
+                      <a href="" class="btn btn-outline-danger">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 g-2">
+                <div class="category-wrapper text-center">
+                  <div class="category-card p-3">
+                    <div class="category-card-image mb-2">
+                      <img
+                        src="images/61SyiLehkpL._AC_UF894,1000_QL80_.jpg"
+                        alt="categories"
+                        width="100%"
+                      />
+                    </div>
+                    <div
+                      class="category-header d-flex my-auto justify-content-center"
+                    >
+                      <h6 class="d-flex my-auto">Educational Toys</h6>
+                    </div>
+                    <div class="category-btn pt-3">
+                      <a href="" class="btn btn-outline-danger">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Category End -->
+
+    <!-- Brands -->
+    <div class="brands-wrapper text-center">
+      <div class="container p-3">
+        <div class="your-class">
+          <div class="px-5">
+            <div class="toy-brand-image">
+              <img
+                src="images/brands/Barbie_Logo.svg.png"
+                alt="brand"
+                width="150px"
+              />
+            </div>
+          </div>
+          <div class="px-5">
+            <div class="toy-brand-image">
+              <img
+                src="images/brands/Hasbro_Logo.svg.png"
+                alt="brand"
+                width="150px"
+              />
+            </div>
+          </div>
+          <div class="px-5">
+            <div class="toy-brand-image">
+              <img
+                src="images/brands/hotwheels.jpg"
+                alt="brand"
+                width="150px"
+              />
+            </div>
+          </div>
+
+          <div class="px-5">
+            <div class="toy-brand-image">
+              <img
+                src="images/brands/Nerf_logo.svg.png"
+                alt="brand"
+                width="150px"
+              />
+            </div>
+            
+          </div>
+          <div class="px-5">
+            <div class="toy-brand-image">
+              <img
+                src="images/brands/LEGO-Logo.png"
+                alt="brand"
+                width="150px"
+              />
+            </div>
+            
+          </div>
+          <div class="px-5">
+            <div class="toy-brand-image">
+              <img
+                src="images/brands/Mattel-Logo.png"
+                alt="brand"
+                width="150px"
+              />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Brand End -->
+
+    <!-- Products -->
+    <div class="product-section-wrapper pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="services-section p-3 text-center">
+              <div class="services-card">
+                <div class="services-icon">
+                  <i class="bi bi-truck fs-2"></i>
+                </div>
+                <div class="services-header">
+                  <h6>Island wide Delivery</h6>
+                </div>
+                <div class="services-description">
+                  <p style="font-size: small;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="services-card">
+                <div class="services-icon">
+                  <i class="bi bi-gem fs-2"></i>
+                </div>
+                <div class="services-header">
+                  <h6>Quaility Products</h6>
+                </div>
+                <div class="services-description">
+                  <p style="font-size: small;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="services-card">
+                <div class="services-icon">
+                  <i class="bi bi-shield-check fs-2"></i>
+                </div>
+                <div class="services-header">
+                  <h6>Secure Payments</h6>
+                </div>
+                <div class="services-description">
+                  <p style="font-size: small;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          <div class="col-md-10">
+            <div class="row d-flex">
+              <div class="col-md-3 col-6 align-items-stretch">
+                <div class="new-products-wrapper">
+                  <div class="new-product-card p-4">
+                    <div class="product-image">
+                      <img src="https://www.diecastlegends.com/Images/Product/Default/large/SL1800505_1.jpg" alt="product-image" width="100%" height="100%" style="object-fit: contain;">
+                    </div>
+                    <div class="view-cart">
+                      <div class="view px-1">
+                        <a href=""><i class="bi bi-eye"></i></a>
+                      </div>
+                      <div class="heart px-1">
+                        <a href=""><i class="bi bi-heart"></i></a>
+                      </div>
+                      <div class="cart px-1">
+                        <a href=""><i class="bi bi-cart"></i></a>
+                      </div>
+                    </div>
+                    <div class="sale-tag">
+                      <p>Sale</p>
+                    </div>
+                  <div class="product-header text-center">
+                    <h6>Metal Pull Back Toy Car</h6>
+                  </div>
+                  <div class="product-sku text-center">
+                    <p style="font-size: smaller;">SKU: 1045056</p>
+                  </div>
+
+                    <div class="product-price text-center">
+                      <h5 >2950.00 LKR</h5>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 align-items-stretch">
+                <div class="new-products-wrapper">
+                  <div class="new-product-card p-4">
+                    <div class="product-image">
+                      <img src="https://canary.contestimg.wish.com/api/webimage/58d6638156122d55153f6fbd-large.jpg" alt="product-image" width="100%" height="100%" style="object-fit: contain;">
+                    </div>
+                    <div class="view-cart">
+                      <div class="view px-1">
+                        <a href=""><i class="bi bi-eye"></i></a>
+                      </div>
+                      <div class="heart px-1">
+                        <a href=""><i class="bi bi-heart"></i></a>
+                      </div>
+                      <div class="cart px-1">
+                        <a href=""><i class="bi bi-cart"></i></a>
+                      </div>
+                    </div>
+                    <div class="sale-tag">
+                      <p>Sale</p>
+                    </div>
+                  <div class="product-header text-center">
+                    <h6>Metal Pull Back Toy Car</h6>
+                  </div>
+                  <div class="product-sku text-center">
+                    <p style="font-size: smaller;">SKU: 1045056</p>
+                  </div>
+
+                    <div class="product-price text-center">
+                      <h5 >2950.00 LKR</h5>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 align-items-stretch">
+                <div class="new-products-wrapper">
+                  <div class="new-product-card p-4">
+                    <div class="product-image">
+                      <img src="https://static-01.daraz.lk/p/7fef49b6c01c41a3c3b90ea6d998e99c.jpg_750x750.jpg_.webp" alt="product-image" width="100%" height="100%" style="object-fit: contain;">
+                    </div>
+                    <div class="view-cart">
+                      <div class="view px-1">
+                        <a href=""><i class="bi bi-eye"></i></a>
+                      </div>
+                      <div class="heart px-1">
+                        <a href=""><i class="bi bi-heart"></i></a>
+                      </div>
+                      <div class="cart px-1">
+                        <a href=""><i class="bi bi-cart"></i></a>
+                      </div>
+                    </div>
+                    <div class="sale-tag">
+                      <p>Sale</p>
+                    </div>
+                  <div class="product-header text-center">
+                    <h6>Metal Pull Back Toy Car</h6>
+                  </div>
+                  <div class="product-sku text-center">
+                    <p style="font-size: smaller;">SKU: 1045056</p>
+                  </div>
+
+                    <div class="product-price text-center">
+                      <h5 >2950.00 LKR</h5>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 align-items-stretch">
+                <div class="new-products-wrapper">
+                  <div class="new-product-card p-4">
+                    <div class="product-image">
+                      <img src="https://lh3.googleusercontent.com/proxy/cqGVZlfg5m0wtSMn863UI2kLfNNIK8NYqcNh8ljJCry37JtklWwKAwpCQe6bPjybHAHkaGMAnaGiXicG7AYcnjwqpZlmCbCx_ptTNjVd2Lt3kWpDWbZ_gBcAO5gNIEUkVOwSL4t6VDPPIMU5PRMAlK9efO_TUg" alt="product-image" width="100%" height="100%" style="object-fit: contain;">
+                    </div>
+                    <div class="view-cart">
+                      <div class="view px-1">
+                        <a href=""><i class="bi bi-eye"></i></a>
+                      </div>
+                      <div class="heart px-1">
+                        <a href=""><i class="bi bi-heart"></i></a>
+                      </div>
+                      <div class="cart px-1">
+                        <a href=""><i class="bi bi-cart"></i></a>
+                      </div>
+                    </div>
+                    <div class="sale-tag">
+                      <p>Sale</p>
+                    </div>
+                  <div class="product-header text-center">
+                    <h6>Metal Pull Back Toy Car</h6>
+                  </div>
+                  <div class="product-sku text-center">
+                    <p style="font-size: smaller;">SKU: 1045056</p>
+                  </div>
+
+                    <div class="product-price text-center">
+                      <h5 >2950.00 LKR</h5>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="js/style.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".your-class").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          autoplay:true,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>
